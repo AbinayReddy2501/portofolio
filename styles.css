@@ -1,17 +1,5 @@
-/* General body styling */
-body {
-    font-family: 'Poppins', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #121212;
-    color: #E0E0E0;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
 /* Header styling */
 .header {
-  
     align-items: center;
     justify-content: space-between;
     padding: 3rem;
@@ -31,8 +19,9 @@ body {
 }
 
 .header-info {
-    
-    align-items: center; /* Vertically center the items */
+    display: flex;
+    flex-direction: column;  /* Stack the items in a column */
+    align-items: flex-start; /* Align items to the left */
 }
 
 .header-info h1 {
@@ -44,7 +33,7 @@ body {
 
 .header-info p {
     font-size: 1.2rem;
-    margin: 0 ; /* Add some space between h1 and p */
+    margin: 0; /* Remove any margin */
     color: #f5f5f5;
     font-weight: lighter;
 }
