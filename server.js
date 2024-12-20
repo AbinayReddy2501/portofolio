@@ -9,7 +9,7 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static("public"));
+app.use(express.static(__dirname));
 
 // MongoDB Atlas connection
 const MONGO_URI = "mongodb+srv://abinayreddy:Reddy22@abinayportfolio.g4m2k.mongodb.net/portfolioDB?retryWrites=true&w=majority";
