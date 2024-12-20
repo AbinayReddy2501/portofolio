@@ -1,7 +1,8 @@
 /* Header styling */
 .header {
+    display: flex;  /* Use flexbox to arrange items horizontally */
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align content to the left */
     padding: 3rem;
     background: linear-gradient(120deg, #8e44ad, #3498db, #f1c40f);
     color: white;
@@ -15,12 +16,12 @@
     height: 240px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-right: 2rem;
+    margin-right: 2rem; /* Space between the image and text */
 }
 
 .header-info {
     display: flex;
-    flex-direction: column;  /* Stack the items in a column */
+    flex-direction: column;  /* Stack the items vertically */
     align-items: flex-start; /* Align items to the left */
 }
 
