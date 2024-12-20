@@ -1,8 +1,19 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #E0E0E0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
 /* Header styling */
 .header {
-    display: flex;  /* Use flexbox to arrange items horizontally */
+    display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: space-between;
     padding: 3rem;
     background: linear-gradient(120deg, #8e44ad, #3498db, #f1c40f);
     color: white;
@@ -12,17 +23,18 @@
 .profile-pic {
     border: 5px solid white;
     border-radius: 10px; /* Square image with rounded corners */
-    width: 240px;
-    height: 240px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-right: 2rem; /* Space between the image and text */
+    margin-right: 2rem;
 }
 
 .header-info {
+    flex: 1;
     display: flex;
-    flex-direction: column;  /* Stack the items vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .header-info h1 {
@@ -34,7 +46,7 @@
 
 .header-info p {
     font-size: 1.2rem;
-    margin: 0; /* Remove any margin */
+    margin: 0.5rem 0 0;
     color: #f5f5f5;
     font-weight: lighter;
 }
